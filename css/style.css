@@ -33,6 +33,7 @@ body{
   background-size: cover;
   background-position: center;
   font-family: "Andika", sans-serif;
+  background-repeat: no-repeat;
 
   /*Req 1*/
 }
@@ -41,6 +42,7 @@ h1{
   color: #c12258;
   font-size: 2em;
   line-height: 2em;
+  text-align: center;
 
   /*Req 2*/
 }
@@ -66,6 +68,7 @@ a{
 /*Req 6a*/
 td{
   text-align: center;
+  vertical-align: middle;
   border-top: 2px solid #000000;
   padding: 10px;
 }
@@ -76,7 +79,7 @@ td{
   min-width: 125px;
   padding: 10px;
   text-align: center;
-  vertical-align: top;
+  vertical-align: middle;
   background-color: #7e0820;
   text-transform: uppercase;
 
@@ -85,6 +88,8 @@ td{
 .rowhead{
   border-right: 2px solid #000000;
   border-top: 2px solid #000000;
+  text-align: center;
+  vertical-align: middle;
 }
 
 /*Req 6d*/
@@ -111,10 +116,17 @@ thead tr:first-child th:first-child{
   border-radius: 10px 0px 0px 0px;
 }
 
-tbody tr:first-child th:last-child{
-  border-radius: 10px 10px 10px 10px;
+thead tr:first-child th:last-child{
+  border-radius: 0px 10px 0px 0px;
 }
 
+tbody tr:last-child th:first-child{
+  border-radius: 0px 0px 0px 10px;
+}
+
+tbody tr:last-child td:last-child{
+  border-radius: 0px 0px 10px 0px;
+}
 
 /*Add selectors and rules here*/
 
